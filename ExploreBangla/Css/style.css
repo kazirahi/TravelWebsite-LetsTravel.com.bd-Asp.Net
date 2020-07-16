@@ -1,0 +1,240 @@
+﻿* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #ecf0f1;
+    color: #2c3e50;
+    margin: 0 auto;
+    background-image: url("../Images/cover1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    /* filter: blur(6px); */
+}
+
+header {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    padding: 15px 15px;
+    z-index: 10;
+}
+
+    header.fixed {
+        background-color: #ffffff;
+        position: fixed;
+        border-bottom: 3px solid #e74c3c;
+    }
+
+        header.fixed a {
+            color: gray;
+        }
+
+        header.fixed h1 {
+            color: gray;
+            border-style: none;
+        }
+
+        header.fixed button {
+            color: gray;
+        }
+
+.main {
+    padding: 15px;
+}
+
+table {
+    vertical-align: top;
+    padding: 2px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 5px solid rgb(26, 173, 36);
+}
+
+.tab {
+    border-style: none;
+}
+
+.td1 {
+    border-left: 5px solid red;
+}
+
+td {
+    vertical-align: top;
+    width: 25%;
+    height: auto;
+    margin: 2px;
+    padding: 10px;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 30px;
+    padding-right: 20px;
+    border-left: 5px solid #e74c3c;
+}
+
+button {
+    text-align: center;
+    align-items: center;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-style: none;
+    padding-left: 30px;
+    padding-right: 20px;
+    background: none;
+    border-left: 5px solid #e74c3c;
+}
+
+h1 {
+    text-align: center;
+    margin: 10px 0;
+    width: 50%;
+    border-bottom: 3px solid #e74c3c;
+    padding-left: 20px;
+}
+
+h2 {
+    margin: 16px 0;
+    font-size: 50px;
+    border-left: 5px solid #e74c3c;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.container {
+    padding: 0;
+}
+
+    .container .group {
+        padding: 10px 48px;
+        margin: 8px;
+        width: auto;
+        border-radius: 4px;
+        border-right: 5px solid #e74c3c;
+        background-color: white;
+    }
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    position: relative;
+    width: 580px;
+}
+
+    label::before {
+        content: "";
+        background: url("../Images/check-circle.svg");
+        background-position: center;
+        background-size: contain;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        left: -44px;
+        top: -8px;
+        transform: scale(0) rotateZ(180deg);
+        transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+    }
+
+input[type="checkbox"]:checked + label::before {
+    transform: scale(1) rotateZ(0deg);
+}
+
+label::after {
+    content: "";
+    border: 2px solid #27ae60;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: -42px;
+    top: -6px;
+    border-radius: 50%;
+}
+
+
+.demo {
+    font-size: 100px;
+    font-weight: bold;
+    color: rgb(242, 190, 0);
+    text-align: center;
+}
+
+.demoo1 {
+    padding: 20px;
+    text-align: center;
+    color: rgb(0, 176, 56);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.demoo2 {
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
+.modal-parent {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+
+.modal {
+    background: white;
+    width: 70%;
+    padding: 30px;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    font-family: arial;
+    position: relative;
+    animation: 0.5s drop;
+}
+
+@keyframes drop {
+    0% {
+        top: -100px;
+    }
+
+    100% {
+        top: 50%;
+    }
+}
+
+.X {
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+section {
+    transition: 0.4s;
+}

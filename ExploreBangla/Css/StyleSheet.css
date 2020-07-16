@@ -1,0 +1,213 @@
+﻿body
+{
+    font-family: 'lucida grande' ,tahoma,verdana,arial,sans-serif;
+    background-color: white;
+    margin:0;
+    padding:0;
+    font-size: 100%;
+    align-content: center;
+    width: 100%;
+  
+}
+
+
+
+#banner {
+    background-color: white;
+    height:0px;
+    border: 3px solid white;
+    margin-bottom:25px;
+    margin-top:0;
+    padding: 10px;
+    
+    
+
+}
+
+
+
+
+
+
+
+#footer {
+        clear: both;
+        width: 100%;
+        height: 100%;
+       padding:15px;
+        background-color: #404040;
+        margin-top: 0px;
+
+}
+
+
+  
+#footer a:hover {
+    color: white;
+}
+
+
+
+
+.CoverImage {
+    background-image: url(../Images/cvr2.jpg);
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:0px;
+    height:300px;
+    width: auto;
+    
+}
+
+#logotd {
+    width: 80px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../Images/tree.png');
+}
+#nametd{
+    width:200px;
+    height:20px;
+    padding-bottom:23px;
+    
+    
+}
+#attd{
+    
+    
+    width: 1080px;
+    
+}
+#btd1{
+   
+    width: 20px;
+    height:15px;
+    background-color: white:
+    
+}
+#btd2 {
+    
+    width: 20px;
+    height: 15px;
+    background-color:white;
+}
+#btd3 {
+    
+    width: 20px;
+    height: 15px;
+    
+}
+
+#ExploreBangla {
+    width: 150px;
+    height: 30px;
+}
+
+
+#slidebar{
+    
+    
+     
+}
+
+#tabledata1 {
+    width: 100%;
+    height: 650px;
+    padding: 0;
+   background-image: url(../Images/slide.png);
+    background-size: cover;
+}
+
+
+
+ 
+
+ 
+.table img
+{
+    margin: 0px;
+    align-content: center;
+    height: 200px;
+    width: 100px;
+    background-color: white;
+}
+
+
+#servicesleftpic{
+
+    background-image: url(../Images/travelpic1.png);
+    background-size:cover;
+}
+#servicesrighttpic {
+    background-image: url(../Images/travelpic2.png);
+    background-size: cover;
+}
+
+.Image2 {
+    border: 3px solid black;
+    border-radius: 50%;
+    box-shadow: 0 6px 10px 0 grey;
+}
+
+.mission {
+    
+    border-radius: 3%;
+    box-shadow: 0 6px 10px 0 grey;
+}
+.supervisior {
+    border-radius: 10%;
+    box-shadow: 0 6px 10px 0 grey;
+}
+
+
+.searchbox {
+    position: absolute;
+    
+    left: 45%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    height: 30px;
+    border-radius:50px;
+    border: none;
+   
+}
+.input{
+    border: none;
+    outline: none;
+    background-color: black;
+    float: left;
+    padding:0;
+    color:black;
+    font-size: 15px;
+    transition: 0.6s all;
+    line-height: 5px;
+    width: 0px;
+
+}
+.btn {
+    color: black;
+    
+  
+    text-decoration: none;
+    
+    background-color: white;
+    padding: 15px;
+    border-radius: 50%;
+    vertical-align: central;
+    border: none;
+   align-content: center;
+    background-image: url(../Images/search.png);
+    background-size: contain ;
+    background-repeat: no-repeat;
+}   
+.searchbox:hover .input{
+    width: 250px;
+    padding: 0 6px;
+}
+.searchbox:hover .btn {
+    background-color: white;
+    
+}
+

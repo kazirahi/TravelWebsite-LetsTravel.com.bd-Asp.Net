@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminPanel.master.cs" Inherits="ExploreBangla.AdminPanel" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<title></title>
+    
+    <style type="text/css">
+        .auto-style2 {
+            margin-left: 0px;
+        }
+        .auto-style3 {
+            width: 217px;
+        }
+    </style>
+    
+</head>
+<body >
+    <form id="form1" runat="server" align="center">
+        <div style="width:1080px;margin:0 auto;background-color:#EDF5E1; box-shadow:0 0 10px grey">
+            <div >
+                <table align="center" style="background-color:#222222" class="auto-style2">
+                    <tr>
+                        <td style="width:1080px" align="right">
+                            <asp:ImageButton style="box-shadow: 2px 2px 5px black;margin-right:5px;margin-top:10px" ID="Image1" runat="server" ImageUrl="~/Images/Untitled-1.png" OnClick="Image1_Click" Height="28px" />
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td style="width:1080px" align="right">
+                            <h3 style="color:white; margin-right: 10px">Admin Panel</h3>
+                        </td>
+                        
+                        
+                    </tr>
+                    
+
+                </table>
+            </div>
+            <div style="background-color:#008F68">
+                <table >
+                    <tr>
+                        <td  >
+                            <asp:Image  ImageAlign="Middle"  style="margin-left:30px" ID="usericon" runat="server" ImageUrl="~/Images/adminpanel/user24.png" ForeColor="White" />
+                        </td>
+                        <td class="auto-style3"   >
+                            <asp:Label align="left" style="margin-left:5px" ID="Label1" runat="server" Font-Bold="True" Font-Names="Lato Black" Font-Size="Medium" ForeColor="White"></asp:Label>
+                        </td>
+                        <td style="margin-left:30px">
+                            <asp:LinkButton  style="text-decoration: none;margin-left:2px" ID="logout" runat="server" BackColor="#008F68" BorderStyle="None" Font-Bold="True" ForeColor="White" OnClick="logout_Click" Font-Names="Lato Black" Font-Size="Medium">Log Out</asp:LinkButton>
+                            <asp:LinkButton  style="text-decoration: none;margin-left:20px" ID="LinkButton1" runat="server" Font-Bold="True" Font-Names="Lato Black" ForeColor="White" OnClick="LinkButton1_Click">Home</asp:LinkButton>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div style="width: 1080px" align="center">
+            <asp:Label align="center" ID="l12" runat="server" Font-Size="XX-Large" Font-Names="Lato Thin" BorderStyle="None" ForeColor="#009933"></asp:Label>
+        </div>
+
+
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            </div>
+            <!--footer-->
+            <div style="width:1080px; background-color:#222222;color:white" align="center">
+                <h3>Admin Panel Designed by Kazi Samsul Alam Rahi
+                    
+                </h3>
+            </div>
+            
+        </div>
+    </form>
+</body>
+</html>

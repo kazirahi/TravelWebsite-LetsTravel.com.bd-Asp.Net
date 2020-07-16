@@ -1,0 +1,536 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Check Score</title>
+    <link rel="stylesheet" href="../Css/style.css" />
+</head>
+<body>
+
+    <header>
+
+        <center>
+            <h1>Check Your Tour Score In Bangladesh</h1>
+            <button type="button" onclick="getValue(); return false;">Check</button>
+            <a onClick="window.location.reload()" draggable="true">Refresh</a>
+        </center>
+
+    </header>
+
+    <section>
+        <div class="main">
+
+            <table>
+                <tr>
+                    <td>
+                        <div class="container">
+
+                            <div class="group">
+                                <input type="checkbox" id="xd" class="checks" value="78" />
+                                <label for="xd">সাজেক</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="figma" class="checks" value="74" />
+                                <label for="figma">ময়ুঙকপাল</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="sketch" class="checks" value="68" />
+                                <label for="sketch">রিসাং ঝর্ণা</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="1" class="checks" value="87" />
+                                <label for="1">তারেং</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="2" class="checks" value="67" />
+                                <label for="2">আলুটীলা </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="3" class="checks" value="78" />
+                                <label for="3">বিছানাকান্দি</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="4" class="checks" value="74" />
+                                <label for="4">রাতারগুল</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="5" class="checks" value="98" />
+                                <label for="5">জাফলং</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="6" class="checks" value="87" />
+                                <label for="6">লালখাল </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="7" class="checks" value="78" />
+                                <label for="7">উৎমাছড়া </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="8" class="checks" value="72" />
+                                <label for="8">সাদাপাথর </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="9" class="checks" value="78" />
+                                <label for="9">তুরং ছড়া </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="10" class="checks" value="87" />
+                                <label for="10">মাধবকুন্ডু </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="11" class="checks" value="57" />
+                                <label for="11">মাধবপুর লেক</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="12" class="checks" value="68" />
+                                <label for="12">লাওয়াছড়া</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="13" class="checks" value="14" />
+                                <label for="13">হাম হাম ঝর্ণা </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="14" class="checks" value="98" />
+                                <label for="14">চন্দ্রনাথ পাহাড়</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="15" class="checks" value="87" />
+                                <label for="15">নাপিত্তিছড়া ট্রেইল</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="16" class="checks" value="21" />
+                                <label for="16">খৈয়াছড়া</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="1068" class="checks" value="100" />
+                                <label for="1068">মাতায়ন্তং</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="105878" class="checks" value="78" />
+                                <label for="105878">হাজাছরা ঝরনা  </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="10678" class="checks" value="100" />
+                                <label for="10678">দেবতাপুকুর</label>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container">
+
+                            <div class="group">
+                                <input type="checkbox" id="xd0" class="checks" value="74" />
+                                <label for="xd0">খৈয়াছড়া ৮ম স্টেপ</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="figma0" class="checks" value="34" />
+                                <label for="figma0">য়াছড়া ১৩ম সিড়ি</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="sketch0" class="checks" value="79" />
+                                <label for="sketch0">কমলদহ ট্রেইল</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="1890" class="checks" value="45" />
+                                <label for="1890">সোনাইছড়ি ট্রেইল</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="2890" class="checks" value="67" />
+                                <label for="2890">সুপ্তধারা, সহস্রধারা</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="30" class="checks" value="41" />
+                                <label for="30">বাশবাড়িয়া </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="40" class="checks" value="88" />
+                                <label for="40">কুমিরা সি বিচ</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="50" class="checks" value="11" />
+                                <label for="50">সন্দিপ </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="60" class="checks" value="78" />
+                                <label for="60">কুয়াকাটা</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="70" class="checks" value="89" />
+                                <label for="70">নিঝুম দ্বীপ</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="80" class="checks" value="81" />
+                                <label for="80">চর কুকরি মুকরি</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="90" class="checks" value="89" />
+                                <label for="90">মনপুরা </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="100" class="checks" value="78" />
+                                <label for="100">ভাসমান পেয়ারা বাজার</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="101" class="checks" value="88" />
+                                <label for="101">বিরিসিরি </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="102" class="checks" value="46" />
+                                <label for="102">বারিক্কা টিলা</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="103" class="checks" value="74" />
+                                <label for="103">টাংগুয়ার হাওর</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="104" class="checks" value="98" />
+                                <label for="104">শিমুল বাগান </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="105" class="checks" value="78" />
+                                <label for="105">টেকেরঘাট </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="106" class="checks" value="100" />
+                                <label for="106">নিলাদ্রি লেক</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="10388" class="checks" value="74" />
+                                <label for="10388">নিকলী হাওর</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="10488" class="checks" value="98" />
+                                <label for="10488">ঢিবির হাওর </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="10588" class="checks" value="78" />
+                                <label for="10588">কালাপাহাড়  </label>
+                            </div>
+
+
+                        </div>
+
+                    </td>
+                    <td>
+                        <div class="container">
+
+
+                            <div class="group">
+                                <input type="checkbox" id="88" class="checks" value="89" />
+                                <label for="88">কাপ্তাই লেক</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="98" class="checks" value="45" />
+                                <label for="98">দুপ্পানি ঝর্ণা</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="10788" class="checks" value="57" />
+                                <label for="10788">গাছকাটা ঝর্ণা</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="118" class="checks" value="23" />
+                                <label for="118">ণকাটা ঝর্ণা </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="128" class="checks" value="11" />
+                                <label for="128">দুমলং </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="138" class="checks" value="87" />
+                                <label for="138">পতেংগা সি বিচ</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="148" class="checks" value="92" />
+                                <label for="148">নারিকেল সি বিচ</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="158" class="checks" value="95" />
+                                <label for="158">মহেশখালি</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="168" class="checks" value="88" />
+                                <label for="168">সেইন্ট মার্টিন</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="178" class="checks" value="47" />
+                                <label for="178">সোনারগাও</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="188" class="checks" value="89" />
+                                <label for="188">মৈনট ঘাট</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="198" class="checks" value="36" />
+                                <label for="198">মাওয়া ঘাট</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="208" class="checks" value="66" />
+                                <label for="208">আড়িয়াল বিল</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="218" class="checks" value="80" />
+                                <label for="218">নীলগিরি </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="228" class="checks" value="78" />
+                                <label for="228">নিলাচল </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="238" class="checks" value="47" />
+                                <label for="238">স্বর্ম্মন্দির </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="248" class="checks" value="92" />
+                                <label for="248">মেঘলা </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="258" class="checks" value="15" />
+                                <label for="258">অমিয়াখুম জলপ্রপাত</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="268" class="checks" value="75" />
+                                <label for="268">আলীকদম গুহা </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="2387" class="checks" value="47" />
+                                <label for="2387">হরিংঘাট </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="2487" class="checks" value="92" />
+                                <label for="2487">বগাকাইন হ্রদ </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="2587" class="checks" value="15" />
+                                <label for="2587">লিলুক ঝর্ণা</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="2687" class="checks" value="75" />
+                                <label for="2687">রিজার্ভ ফলস </label>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="container">
+                            <div class="group">
+                                <input type="checkbox" id="xd89" class="checks" value="86" />
+                                <label for="xd89">কেওক্রাডং </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="figma8" class="checks" value="72" />
+                                <label for="figma8">জাদিপাই ঝর্ণা</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="sketch8" class="checks" value="70" />
+                                <label for="sketch8">চিম্বুক পাহাড়</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="184404" class="checks" value="78" />
+                                <label for="184404"> দামতুয়া ঝর্ণা</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="2145418" class="checks" value="68" />
+                                <label for="2145418">তিনাপ সাইতার</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="38" class="checks" value="45" />
+                                <label for="38">নাফাখুম </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="48" class="checks" value="85" />
+                                <label for="48">নাইক্ষংমুখ </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="58" class="checks" value="37" />
+                                <label for="58">সাতভাইখুম </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="68" class="checks" value="100" />
+                                <label for="68">ভেলাখুম </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="78" class="checks" value="99" />
+                                <label for="78">দেবতাখুম </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="107" class="checks" value="98" />
+                                <label for="107">মহামায়া লেক ক্যাম্প</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="108" class="checks" value="89" />
+                                <label for="108">গুলিয়াখালি </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="109" class="checks" value="67" />
+                                <label for="109">ক্রিস তং</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="200" class="checks" value="63" />
+                                <label for="200">সাকাহাফং </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="201" class="checks" value="13" />
+                                <label for="201">জোতলং </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="202" class="checks" value="45" />
+                                <label for="202">যোগী হাফং</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="203" class="checks" value="87" />
+                                <label for="203">তাজিংডং </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="204" class="checks" value="35" />
+                                <label for="204">ডিম পাহাড়</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="205" class="checks" value="75" />
+                                <label for="205">তলাবং ঝর্ণা </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="20299" class="checks" value="45" />
+                                <label for="20299">রেমাক্রি </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="2039" class="checks" value="87" />
+                                <label for="2039">সুন্দরবান  </label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="20994" class="checks" value="35" />
+                                <label for="20994">কক্সবাজার</label>
+                            </div>
+                            <div class="group">
+                                <input type="checkbox" id="27705" class="checks" value="75" />
+                                <label for="27705">সোয়াচ অফ নো গ্রাউন্ড </label>
+                            </div>
+                        </div>
+
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <div class="modal-parent">
+        <div class="modal">
+            <h2>Your Tour Expericence Is:</h2>
+            <table class="tab">
+                <tr>
+                    <td>
+                        <p id="demo" class="demo"> %</p>
+                    </td>
+                    <td class="td1">
+                        <p id="demo1" class="demoo1"> </p>
+                        <p id="demo2" class="demoo2"> </p>
+
+                    </td>
+                </tr>
+            </table>
+
+
+            <span class="X" draggable="true">&times;</span>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+
+		function getValue(){
+			var checks = document.getElementsByClassName('checks');
+			var str = 0, count = 0;
+			for (i=0; i < checks.length; i++){
+				if (checks[i].checked== true) {
+					str +=parseInt(checks[i].value) ;
+					count++;
+				}
+			}
+
+			if (str>0){
+				var x = parseInt(str/count);
+					if (count>0 && count<=15){
+						document.getElementById('demo').innerHTML = x + "%";
+						document.getElementById('demo1').innerHTML =  "Beginner level";
+						document.getElementById('demo2').innerHTML =  "Total Place Visited: "+count;
+				}
+				else if (count>=16 && count<=40) {
+
+						document.getElementById('demo').innerHTML = x + "%";
+
+						document.getElementById('demo1').innerHTML =  "Intermediate level";
+
+						document.getElementById('demo2').innerHTML =  "Total Place Visited: "+count;
+				}
+				else if (count>=41 && count<=61) {
+
+						document.getElementById('demo').innerHTML = x + "%";
+
+						document.getElementById('demo1').innerHTML =  "Advance level";
+
+						document.getElementById('demo2').innerHTML =  "Total Place Visited: "+count;
+				}
+				else if (count>=62 && count<=80) {
+
+						document.getElementById('demo').innerHTML = x + "%";
+
+						document.getElementById('demo1').innerHTML =  "Pro level";
+
+						document.getElementById('demo2').innerHTML =  "Total Place Visited: "+count;
+				}
+				else if (count>=81 && count<=100) {
+
+						document.getElementById('demo').innerHTML = x + "%";
+
+						document.getElementById('demo1').innerHTML =  "Worldclass level";
+
+						document.getElementById('demo2').innerHTML =  "Total Place Visited: "+count;
+				}
+				else if (count>=101 ) {
+
+						document.getElementById('demo').innerHTML = x + "%";
+
+						document.getElementById('demo1').innerHTML =  "Legendary level";
+
+						document.getElementById('demo2').innerHTML =  "Total Place Visited: "+count;
+				}
+			}
+			else {
+				document.getElementById('demo').innerHTML = str + "%";
+				document.getElementById('demo1').innerHTML =  "No Place Visited";
+			}
+
+
+		}
+
+		var parent = document.querySelector(".modal-parent"),
+		btn = document.querySelector("button"),
+		X = document.querySelector(".X"),
+		section = document.querySelector("section");
+		btn.addEventListener("click", appear);
+		function appear() {
+		parent.style.display = "block";
+		section.style.filter = "blur(10px)"
+		}
+		X.addEventListener("click", disappearX);
+		function disappearX() {
+		parent.style.display = "none";
+		section.style.filter = "blur(0px)"
+		}
+		parent.addEventListener("click", disappearParent)
+		function disappearParent(e) {
+		if (e.target.className == "modal-parent") {
+		parent.style.display = "none";
+		section.style.filter = "blur(0px)"
+			}
+		}
+			window.onscroll=function(){
+		const docScrollTop=document.documentElement.scrollTop;
+		if (window.innerWidth>500){
+			if (docScrollTop>0) {
+				document.querySelector("header").classList.add("fixed")
+			}
+			else{
+				document.querySelector("header").classList.remove("fixed")
+			}
+		}
+	}
+</script>
+</html>

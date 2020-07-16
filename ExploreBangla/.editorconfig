@@ -1,0 +1,10 @@
+﻿[*.cs]
+
+# IDE0060: Remove unused parameter
+dotnet_code_quality_unused_parameters = non_public:suggestion
+
+# IDE0005: Using directive is unnecessary.
+dotnet_diagnostic.IDE0005.severity = none
+
+# IDE0055: Fix formatting
+dotnet_diagnostic.IDE0055.severity = suggestion

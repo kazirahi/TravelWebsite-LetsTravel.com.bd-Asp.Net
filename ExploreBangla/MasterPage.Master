@@ -1,0 +1,348 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="ExploreBangla.MasterPage" %>
+
+<!DOCTYPE xmlns="https://www.w3.org/1999/xhtml">
+
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>LetsTravel.com.bd</title>
+    
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/CSS/StyleSheet.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet"/>
+   
+
+
+    <style>
+        body {
+            font-size: 100%;
+        }
+
+        h1 {
+            display: block;
+            font-size: 2em;
+            margin-top: 0.67em;
+            margin-bottom: 0.67em;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: bold;
+        }
+
+        h2 {
+            display: block;
+            font-size: 1.5em;
+            margin-top: 0.83em;
+            margin-bottom: 0.83em;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: bold;
+        }
+
+        h2 {
+            display: block;
+            font-size: 1.5em;
+            margin-top: 0.83em;
+            margin-bottom: 0.83em;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: bold;
+        }
+
+        h4 {
+            display: block;
+            font-size: 1em;
+            margin-top: 1.33em;
+            margin-bottom: 1.33em;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: bold;
+        }
+
+        h5 {
+            display: block;
+            font-size: .83em;
+            margin-top: 1.67em;
+            margin-bottom: 1.67em;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: bold;
+        }
+
+        h6 {
+            display: block;
+            font-size: .67em;
+            margin-top: 2.33em;
+            margin-bottom: 2.33em;
+            margin-left: 0;
+            margin-right: 0;
+            font-weight: bold;
+        }
+
+        .content_area {
+            width: 100%;
+            height: auto;
+            margin-top: 30px;
+        }
+
+        .topmenu {
+            position: relative;
+            z-index: 100;
+        }
+
+        .footer {
+            width: 100%;
+        }
+
+        .auto-style1 {
+            height: auto;
+            width: 50%;
+        }
+
+        .auto-style3 {
+            width: 170px;
+        }
+
+        .menutd {
+            width: 120px;
+        }
+
+        .menuname {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Roboto;
+            color: #808080;
+        }
+
+            .menuname:hover {
+                color: #d00040;
+            }
+
+        .footerLink {
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+            padding: 15px 15px 15px 0px;
+        }
+
+        .footerLink2 {
+            color: gray;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 15px;
+        }
+
+            .footerLink2:hover {
+                color: white;
+            }
+
+        .signA {
+            font-size: 13px;
+            color: Black;
+            font-weight: bold;
+            text-decoration: none;
+            text-align: center
+        }
+
+            .signA:hover {
+                color: #4285f4;
+            }
+
+        .signnMenu {
+            width: auto;
+            height: auto;
+            vertical-align: top;
+            border: 1px solid Gray;
+            padding: 3px;
+            border-radius: 5px
+        }
+    </style>
+
+
+</head>
+<body>
+
+
+    <form id="form1" runat="server">
+        <header>
+            <div class="topmenu"> 
+            <!-- Menu Bar -->
+                <div>
+                    <table style="width: 100%; height: 80px; border-collapse:collapse;background-color: white">
+                        <tr>
+                             <!-- Logo and search center  -->
+                            <td style="padding: 5px 20px;border-collapse:collapse;" class="auto-style1">
+                                <table>
+                                    <tr>
+                                        <td style="width: auto; height: auto;border-collapse:collapse">
+                                            <a style="font-size: 2em; font-weight: bold; font-family:Roboto; color:#d00040; text-align: center; text-decoration: none" href="Home.aspx">Lets<span style="color:#4285f4">T</span>ravel.<span style="font-size: 0.5em;">com.bd</span></a>
+                                        </td>
+                                        <td>
+                                            <table style="width: 100%; height: auto;border-collapse:collapse;">
+                                                <tr>
+                                                    <td style="width: 100%; padding:0px;margin:0px;height: auto;border-bottom: 1px solid gray;;border-top: 1px solid gray;;border-left: 1px solid gray;">
+                                            <asp:TextBox ID="TextBox2" runat="server" style="padding:5px; " Width="100%" placeholder="Sajek Valley..." BorderStyle="None" Height="28px"></asp:TextBox>
+                                        </td>
+                                        <td style="padding:0px;margin:0px; background-color: #d00040;border:1px solid #d00040" class="auto-style3">
+                                            <asp:LinkButton ID="HomepagesearchButton" runat="server" Height="32px" Width="45px" BorderColor="#D00040" BorderStyle="Solid" BorderWidth="1px" OnClick="HomepagesearchButton_Click"><i class="fa fa-search" style="padding-left:9px;padding-top:4px;color:white; font-size:25px"></i></asp:LinkButton>
+                                        </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                        
+                                    </tr>
+                                </table>
+                            </td>
+                             <!-- Menu  -->
+                            <td style="width: 50%; height: auto;">
+                                <table style="width: 100%; height: auto;">
+                                    <tr font-size="X-Small">
+                                        <td align="right">
+                                            <asp:LinkButton ID="LinkButton1" CssClass="fa fa-user" runat="server" Font-Size="Medium" OnClick="LinkButton1_Click1" Visible="False" ForeColor="#D00040"></asp:LinkButton>
+                                            <asp:Label ID="Label1" runat="server" Text="
+                                                &lt;table id=&quot;Top&quot; align=&quot;right&quot; style=&quot;width:auto; height:15px&quot;&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td class=&quot;signnMenu&quot; &gt;
+                                                         &lt;a class=&quot;signA&quot;  href=&quot;Signup.aspx&quot;&gt;SignUp&lt;/a&gt;
+                                                    &lt;/td&gt;
+                                                    &lt;td class=&quot;signnMenu&quot; &gt;
+                                                         &lt;a class=&quot;signA&quot;  href=&quot;Signin.aspx&quot;&gt;SignIn&lt;/a&gt;
+                                                     &lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;/table&gt;
+                                                " Font-Size="Medium"></asp:Label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table align="right" style="width: 100%; height: auto;">
+                                   
+                                    <tr>
+                                        <td align="center" class="menutd">
+                                            <a class="menuname" href="Home.aspx">Home</a>
+                                        </td>
+                                         <td align="center" class="menutd">
+                                            <a class="menuname" href="AboutUs.aspx">About Us</a>
+                                        </td>
+                                         <td align="center" class="menutd">
+                                            <a class="menuname" href="Bloger.aspx">Blog</a>
+                                        </td>
+                                        <td align="center" class="menutd">
+                                            <a class="menuname" href="RankedPlace.aspx">Ranked</a>
+                                        </td>
+                                         <td align="center" class="menutd">
+                                            <a class="menuname" href="Contact.aspx">Contact Us</a>
+                                        </td>
+                                         <td align="center" class="menutd">
+                                            <a class="menuname" href="Checkscore.html" target="_blank">Check Score</a>
+                                        </td>
+                                         
+                                    </tr>
+                                </table>
+                                        </td>
+                                    </tr>
+                                </table>
+                                
+                                
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div >
+
+                </div>
+            <!-- Top Menu -->
+
+                
+                </div>
+        </header>
+        <div style="width: 100%">
+            
+            
+            <!-- Content Area -->
+            <div class="content_area" style="margin-top: 0;width:auto; height:auto">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+
+            </div>
+            <!-- Footer -->
+            <div class="footer" style="background-color: #404040; padding: 0px">
+
+                <table style="width: 100%; height: auto; padding: 20px">
+                    <tr>
+                        <td style="width: 33%; height: auto; padding: 20px">
+                            <table style="width: 100%; height: auto;">
+                                <tr>
+                                    <td style="width: 100%; height: auto;" >
+                                        <a style="font-size: 2em; font-weight: bold; font-family:Roboto; color:white; text-align: center; text-decoration: none" href="Pages/Home.aspx">Lets<span style="color:#4285f4">T</span>ravel.<span style="font-size: 0.5em;">com.bd</span></a>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><p style="color: white; font-size:15px;font-family: Roboto; font-weight:normal; text-align:justify">This is our beta version website. This website based on tourist place based on Bangladesh. In this beta version website, the ingredient are use is free items of Google, Pix Bay, Pinterest and any other website...</p></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <a class="footerLink" href="#"><i class="fa fa-facebook"></i></a>
+                                        <a class="footerLink" href="#"><i class="fa fa-instagram"></i></a>
+                                        <a class="footerLink" href="#"><i class="fa fa-linkedin-square"></i></a>
+                                        <a class="footerLink" href="#"><i class="fa fa-twitter-square"></i></a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td style="width: 33%; height: auto; padding: 20px; border-right: 2px dotted gray;border-left: 2px dotted gray">
+                            <table align="center" style="width: 100%; height: auto; ">
+                                <tr>
+                                    <td align="center" style="width: 100%; height: auto; ">
+                                        <a class="footerLink2" href="AboutUs.aspx">About Us</a>
+                                    </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td align="center" style="width: 100%; height: auto; ">
+                                        <a class="footerLink2" href="Bloger.aspx">Blog</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="width: 100%; height: auto; ">
+                                        <a class="footerLink2" href="RankedPlace.aspx">Ranked</a>
+                                    </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td align="center" style="width: 100%; height: auto; ">
+                                        <a class="footerLink2" href="Contact.aspx">Contact Us</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td  style="width: 33%; height: auto; padding:0 20px; vertical-align:top">
+                            <table style="width: 100%; height: auto;">
+                                <tr>
+                                    <td style="width: 100%; height: auto;">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3648.657954874967!2d90.31254291435073!3d23.866276790258084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c21973bf4711%3A0x90650477a61db73d!2sEastern%20University%20Permanent%20Campus!5e0!3m2!1sen!2sbd!4v1573750958259!5m2!1sen!2sbd" width="100%" height="120" marginheight="" frameborder="0" style="border: 0;" allowfullscreen=""></iframe>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 100%; height: auto;">
+                                        <p style="color: gray ; text-align: right" align="right">Eastern University Permanent Campus<br />
+                                            Road 6, Block B, Ashulia Model Town,<br />Savar, Dhaka-1345</p>
+                                    </td>
+                                </tr>
+                            </table>
+                            
+                        </td>
+                    </tr>
+                </table>
+
+                <p align="center" style="padding: 15px; color: gray"><i class="fa fa-copyright"></i> Letstravel.com.bd</p>
+            </div>
+        </div>
+    </form>
+    
+</body>
+</html>

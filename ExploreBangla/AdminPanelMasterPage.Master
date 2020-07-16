@@ -1,0 +1,222 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminPanelMasterPage.master.cs" Inherits="ExploreBangla.AdminPanelMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="~/CSS/StyleSheet.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet"/>
+    <style>
+        .LinkButton{
+            text-decoration: none;
+            font-family: Roboto;
+            padding: 15px;
+            color: #80a1b3;
+            font-size: 17px;
+            font-weight: bold;
+            height: 30px;
+        }
+        .LinkButton:hover{
+            color:white;
+        }
+        .LinkButtonSubButton{
+            text-decoration: none;
+            font-family: Roboto;
+            padding: 20px;
+            color: #80a1b3;
+            font-size: 15px;
+            font-weight: bold;
+            height: 30px;
+            text-align: right;
+        }
+        .LinkButtonSubButton:hover{
+            color: white;
+        }
+        .tabledata {
+            width: 100%;
+            height: auto;
+            padding:15px 15px 15px 0;
+            border-bottom: 1px dotted gray;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="width: 100%; height: auto">
+
+            <table style="width: 100%; height: auto; margin: 0; padding: 0; border-collapse: collapse">
+
+                <tr>
+                    <td style="width: 100%; height: auto; border-collapse: collapse">
+                        <table style="width: 100%; height: auto;">
+                            <tr>
+                                <td style="width: 20%; height: auto; background-color: #2c3144; padding: 0px; vertical-align: top">
+                                    <table style="width: 100%; height: auto;">
+                                        <tr>
+                                            <td style="width: auto; height: auto; padding: 10px 10px 10px 10px;">
+                                                <a style="font-size: 2em; font-weight: bold; font-family: Roboto; color: white; text-align: center; text-decoration: none" href="~/Pages/Home.aspx" target="_blank">Lets<span style="color: #4285f4">T</span>ravel.<span style="font-size: 0.5em;">com.bd</span><br />
+                                                    <span style="font-size: 20px; font-family: 'Calligraffitti'">Admin Panel</span> </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="width: 100%; height: 80px; padding: 10px; background-color: rgba(0, 0, 0, 0.41)">
+                                                <i class="fa fa-user" style="color: white"></i>
+                                                <asp:Label ID="UserName" runat="server" Font-Bold="True" Font-Names="Roboto" Font-Size="Large" ForeColor="White"></asp:Label>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="tabledata">
+                                                <asp:LinkButton CssClass="LinkButton" ID="HomeButton" runat="server" OnClick="HomeButton_Click"><i class="fa fa-home"></i> Home</asp:LinkButton>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tabledata">
+                                                <table style="width: 100%; height: auto">
+                                                    <tr>
+                                                        <td style="width: 85%">
+                                                            <asp:LinkButton CssClass="LinkButton" ID="NotificationButton" runat="server" OnClick="NotificationButton_Click"><i class="fa fa-bell"></i> Notifications</asp:LinkButton>
+                                                        </td>
+
+                                                        <td align="center" style="width: 30px; height: 30px; border-radius: 50%; background-color: #8ec452">
+                                                            <asp:Label ID="NotificationNo" runat="server" Text="4" Font-Bold="True" ForeColor="White"></asp:Label>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td class="tabledata">
+                                                <table style="width: 100%; height: auto">
+                                                    <tr>
+                                                        <td style="width: 85%">
+                                                            <asp:LinkButton CssClass="LinkButton" ID="BlogButton" runat="server" OnClick="BlogButton_Click"><i class="fa fa-feed"></i> Blog</asp:LinkButton>
+                                                        </td>
+
+                                                        <td align="center" style="width: 30px; height: 30px; border-radius: 50%; background-color: #1ebcd2">
+                                                            <asp:Label ID="Label1" runat="server" Text="5" Font-Bold="True" ForeColor="White"></asp:Label>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td class="tabledata">
+                                                <asp:LinkButton CssClass="LinkButton" ID="AboutButton" runat="server" OnClick="AboutButton_Click"><i class="fa fa-exclamation-triangle"></i> About</asp:LinkButton>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+
+                                            <td class="tabledata">
+                                                <asp:LinkButton ID="PlaceInformation" CssClass="LinkButton" runat="server" OnClick="PlaceInformation_Click"> <i style="" class="fa fa-map"></i> Place Information</asp:LinkButton>
+
+
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td class="tabledata">
+                                                <asp:LinkButton CssClass="LinkButton" ID="RankedPlaceButton" runat="server" OnClick="RankedPlaceButton_Click"><i class="fa fa-sort-numeric-asc"></i> Ranked</asp:LinkButton>
+                                            </td>
+                                        </tr>
+                                        <tr>
+
+
+                                            <td class="tabledata">
+                                                <asp:LinkButton ID="HotelButton" CssClass="LinkButton" runat="server" OnClick="HotelButton_Click"><i style="" class="fa fa-hotel"></i> Hotel</asp:LinkButton>
+
+
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+
+
+                                            <td class="tabledata">
+                                                <asp:LinkButton ID="RestaurenButton" CssClass="LinkButton" runat="server" OnClick="RestaurenButton_Click"><i style="padding-left:0px" class="fa fa-coffee"></i> Restaurent</asp:LinkButton>
+
+
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td class="tabledata">
+                                                <asp:LinkButton CssClass="LinkButton" ID="ClientComment" runat="server" OnClick="ClientComment_Click"><i class="fa fa-commenting"></i> Client Comment</asp:LinkButton>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tabledata">
+                                                <table style="width: 100%; height: auto">
+                                                    <tr>
+                                                        <td style="width: 85%">
+                                                            <asp:LinkButton CssClass="LinkButton" ID="NewUser" runat="server" OnClick="NewUser_Click"><i class="fa fa-user-plus"></i> New User</asp:LinkButton>
+
+                                                        </td>
+
+                                                        <td align="center" style="width: 30px; height: 30px; border-radius: 50%; background-color: #ff244e">
+                                                            <asp:Label ID="Label2" runat="server" Text="3" Font-Bold="True" ForeColor="White"></asp:Label>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+
+
+                                        </tr>
+                                        <tr>
+                                            <td class="tabledata">
+                                                <asp:LinkButton CssClass="LinkButton" ID="Client" runat="server" OnClick="Client_Click"><i class="fa fa-group"></i> Client Review </asp:LinkButton>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tabledata">
+                                                <asp:LinkButton CssClass="LinkButton" ID="OurTeam" runat="server" OnClick="OurTeam_Click"><i class="fa fa-group"></i> Our Team</asp:LinkButton>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tabledata">
+                                                <asp:LinkButton CssClass="LinkButton" ID="AdminUser" runat="server" OnClick="AdminUser_Click"><i class="fa fa-user-secret"></i> Admin</asp:LinkButton>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tabledata">
+                                                <asp:LinkButton CssClass="LinkButton" ID="LogoutButton" runat="server" OnClick="LogoutButton_Click"><i class="fa fa-taxi"></i> Logout</asp:LinkButton>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td style="width: 80%; height: auto; vertical-align: top">
+                                    <table style="width: 100%; height: auto">
+                                        <tr>
+                                            <td style="width: 100%; height: auto; vertical-align: top">
+                                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                                </asp:ContentPlaceHolder>
+                                            </td>
+                                        </tr>
+                                    </table>
+
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+
+                </tr>
+            </table>
+
+
+        </div>
+    </form>
+</body>
+</html>
